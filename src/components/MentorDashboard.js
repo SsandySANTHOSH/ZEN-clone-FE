@@ -20,7 +20,7 @@ const MentorDashboard = () => {
     const MentorDashboardValid = async () => {
         let token = localStorage.getItem("usersdatatoken");
 
-        const res = await fetch("https://zen-be.onrender.com/user/validuser", {
+        const res = await fetch("https://capstonebackend-ivdw.onrender.com/user/validuser", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",

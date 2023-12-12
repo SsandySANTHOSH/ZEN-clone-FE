@@ -10,7 +10,7 @@ const _id = localStorage.getItem("_id");
     
     const [data ,setData] = useState([])
     useEffect(()=>{
-        axios.get(`https://zen-be.onrender.com/query/getUserQueryonly/${_id}`)
+        axios.get(`https://capstonebackend-ivdw.onrender.com/query/getUserQueryonly/${_id}`)
         .then(res =>setData(res.data.data))
         .catch(err =>console.log(err))
 
@@ -18,13 +18,13 @@ const _id = localStorage.getItem("_id");
     console.log(data)
 
     function handleclose(d){
-        axios.put(`https://zen-be.onrender.com/query/queryclose/${d._id}`)
+        axios.put(`https://capstonebackend-ivdw.onrender.com/query/queryclose/${d._id}`)
         .then(res =>setData(res.data.data))
         .catch(err =>console.log(err))
     }
     function handlereopen(d){
         if(data.status == "closed"){
-            axios.put(`http://localhost:5000/query/querystudentreopen/${d._id}`)
+            axios.put(`https://capstonebackend-ivdw.onrender.com/query/querystudentreopen/${d._id}`)
         .then(res =>setData(res.data.data))
         .catch(err =>console.log(err))
 

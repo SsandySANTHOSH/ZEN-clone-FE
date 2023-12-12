@@ -52,7 +52,7 @@ const Login = () => {
             // console.log("user login succesfully done");
 
 
-            const data = await fetch("https://zen-be.onrender.com/user/login",{
+            const data = await fetch("https://capstonebackend-ivdw.onrender.com/user/login",{
                 method:"POST",
                 headers:{
                     "Content-Type":"application/json"

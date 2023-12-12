@@ -19,7 +19,7 @@ export default function ViewStudent() {
     const handledelete  = (_id) =>{
         const confirm = window.confirm("Would you like to Delete?");
         if(confirm){
-            axios.delete(`https://zen-be.onrender.com/user/` +_id)
+            axios.delete(`https://capstonebackend-ivdw.onrender.com/user/` +_id)
             .then(res => {
                 navigate(`/viewusers`);
             }).catch(err => console.log(err));

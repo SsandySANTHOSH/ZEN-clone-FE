@@ -7,7 +7,7 @@ export default function Placementboard() {
     
     const [data ,setData] = useState([])
     useEffect(()=>{
-        axios.get('https://zen-be.onrender.com/user/getStudentOnly')
+        axios.get('https://capstonebackend-ivdw.onrender.com/user/getStudentOnly')
         .then(res =>setData(res.data.data))
         .catch(err =>console.log(err))
 

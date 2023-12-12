@@ -8,14 +8,14 @@ export default function MentorQuery() {
     const _id = localStorage.getItem("_id");
     const [data ,setData] = useState([])
     useEffect(()=>{
-        axios.get('https://zen-be.onrender.com/query/getAllQuery')
+        axios.get('https://capstonebackend-ivdw.onrender.com/query/getAllQuery')
         .then(res =>setData(res.data.data))
         .catch(err =>console.log(err))
 
     },[])
 
     function handleQuery(d){
-        axios.put(`https://zen-be.onrender.com/query/querypick/${_id}?_id=${d._id}`)
+        axios.put(`https://capstonebackend-ivdw.onrender.com/query/querypick/${_id}?_id=${d._id}`)
         .then(res =>setData(res.data.data))
         .catch(err =>console.log(err))
     }

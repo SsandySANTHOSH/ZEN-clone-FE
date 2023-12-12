@@ -17,7 +17,7 @@ const ForgotPassword = () => {
     const [message, setMessage] = useState("");
 
     const userValid = async () => {
-        const res = await fetch(`https://zen-be.onrender.com/user/forgotpassword/${id}/${token}`, {
+        const res = await fetch(`https://capstonebackend-ivdw.onrender.com/user/forgotpassword/${id}/${token}`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"
@@ -50,7 +50,7 @@ const ForgotPassword = () => {
                 position: "top-center"
             });
         } else {
-            const res = await fetch(`https://zen-be.onrender.com/user/${id}/${token}`, {
+            const res = await fetch(`https://capstonebackend-ivdw.onrender.com/user/${id}/${token}`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

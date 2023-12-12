@@ -9,7 +9,7 @@ export default function Leave() {
     const [data ,setData] = useState([])
     const _id = localStorage.getItem("_id")
     useEffect(()=>{
-        axios.get(`https://zen-be.onrender.com/leave/getUserleaveOnly/${_id}`)
+        axios.get(`https://capstonebackend-ivdw.onrender.com/leave/getUserleaveOnly/${_id}`)
         .then(res =>setData(res.data.data))
         .catch(err =>console.log(err))
 

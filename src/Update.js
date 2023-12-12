@@ -35,14 +35,14 @@ const setVal = (e) => {
     })
 };
 function handleupdate(){
-    axios.put('https://zen-be.onrender.com/user'+ _id)
+    axios.put('https://capstonebackend-ivdw.onrender.com/user'+ _id)
       .then(res =>setData(res.data.data))
       .catch(err =>console.log(err))
 
 }
 
   useEffect(()=>{
-      axios.get('https://zen-be.onrender.com/user/getAllUser/'+ _id)
+      axios.get('https://capstonebackend-ivdw.onrender.com/user/getAllUser/'+ _id)
       .then(res =>setData(res.data.data))
       .catch(err =>console.log(err))
 

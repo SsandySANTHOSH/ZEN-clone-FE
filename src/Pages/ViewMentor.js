@@ -8,7 +8,7 @@ export default function ViewMentor() {
     
     const [data ,setData] = useState([])
     useEffect(()=>{
-        axios.get('https://zen-be.onrender.com/user/getmentoronly')
+        axios.get('https://capstonebackend-ivdw.onrender.com/user/getmentoronly')
         .then(res =>setData(res.data.data))
         .catch(err =>console.log(err))
 
@@ -19,7 +19,7 @@ export default function ViewMentor() {
     const handledelete  = (_id) =>{
         const confirm = window.confirm("Would you like to Delete?");
         if(confirm){
-            axios.delete(`https://zen-be.onrender.com/user/` +_id)
+            axios.delete(`https://capstonebackend-ivdw.onrender.com/user/` +_id)
             .then(res => {
                 navigate(`/viewusers`);
             }).catch(err => console.log(err));

@@ -48,7 +48,7 @@ console.log(id);
             // console.log("user registration succesfully done");
 
 
-            const data = await fetch("https://zen-be.onrender.com/query/create", {
+            const data = await fetch("https://capstonebackend-ivdw.onrender.com/query/create", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

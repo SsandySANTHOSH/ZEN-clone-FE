@@ -23,7 +23,7 @@ const PasswordReset = () => {
                 position: "top-center"
             });
         } else {
-            const res = await fetch("https://zen-be.onrender.com/user/sendpasswordlink", {
+            const res = await fetch("https://capstonebackend-ivdw.onrender.com/user/sendpasswordlink", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

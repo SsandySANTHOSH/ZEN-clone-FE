@@ -17,7 +17,7 @@ function Read() {
     function range(){
 
 
-        axios.get('https://zen-be.onrender.com/user/getAllUser/'+ _id)
+        axios.get('https://capstonebackend-ivdw.onrender.com/user/getAllUser/'+ _id)
         .then(res =>setData(res.data.data))
         .catch(err =>console.log(err))
         //console.log(data)

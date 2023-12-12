@@ -8,7 +8,7 @@ export default function MentorPickedQuery() {
     const _id = localStorage.getItem("_id");
     const [data ,setData] = useState([])
     useEffect(()=>{
-        axios.get(`https://zen-be.onrender.com/query/getmentorQuery/${_id}`)
+        axios.get(`https://capstonebackend-ivdw.onrender.com/query/getmentorQuery/${_id}`)
         .then(res =>setData(res.data.data))
         .catch(err =>console.log(err))
 
@@ -16,7 +16,7 @@ export default function MentorPickedQuery() {
 
  
     function handleclose(d){
-        axios.put(`https://zen-be.onrender.com/query/queryreopen/${d._id}`)
+        axios.put(`https://capstonebackend-ivdw.onrender.com/query/queryreopen/${d._id}`)
         .then(res =>setData(res.data.data))
         .catch(err =>console.log(err))
     }

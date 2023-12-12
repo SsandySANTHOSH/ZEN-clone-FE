@@ -48,7 +48,7 @@ const userid = localStorage.getItem("_id");
             // console.log("user registration succesfully done");
 
 
-            const data = await fetch("https://zen-be.onrender.com/leave/create", {
+            const data = await fetch("https://capstonebackend-ivdw.onrender.com/leave/create", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
