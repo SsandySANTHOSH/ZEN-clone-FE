@@ -94,6 +94,8 @@ const Register = () => {
                     position: "top-center"
                 });
                 setInpval({ ...inpval, fname: "", email: "",course: "",phonenumber:"", password: "", cpassword: "" });
+            }else{
+                toast.error(" Email is already registered")
             }
         }
     }
